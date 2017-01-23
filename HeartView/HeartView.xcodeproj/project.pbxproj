@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F797B9401E36043900F209BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797B93F1E36043900F209BA /* AppDelegate.swift */; };
+		F797B9421E36043900F209BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797B9411E36043900F209BA /* ViewController.swift */; };
+		F797B9451E36043900F209BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F797B9431E36043900F209BA /* Main.storyboard */; };
+		F797B9471E36043900F209BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F797B9461E36043900F209BA /* Assets.xcassets */; };
+		F797B94A1E36043900F209BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F797B9481E36043900F209BA /* LaunchScreen.storyboard */; };
+		F797B9521E36044D00F209BA /* RenderableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797B9511E36044D00F209BA /* RenderableView.swift */; };
+		F797B9541E36047B00F209BA /* HeartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F797B9531E36047B00F209BA /* HeartView.xib */; };
+		F797B9561E36048900F209BA /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797B9551E36048900F209BA /* HeartView.swift */; };
+		F797B9581E3605D900F209BA /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = F797B9571E3605D900F209BA /* heart.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F797B93C1E36043900F209BA /* HeartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F797B93F1E36043900F209BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F797B9411E36043900F209BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F797B9441E36043900F209BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F797B9461E36043900F209BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F797B9491E36043900F209BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F797B94B1E36043900F209BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F797B9511E36044D00F209BA /* RenderableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderableView.swift; sourceTree = "<group>"; };
+		F797B9531E36047B00F209BA /* HeartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeartView.xib; sourceTree = "<group>"; };
+		F797B9551E36048900F209BA /* HeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		F797B9571E3605D900F209BA /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F797B9391E36043900F209BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F797B9331E36043900F209BA = {
+			isa = PBXGroup;
+			children = (
+				F797B93E1E36043900F209BA /* HeartView */,
+				F797B93D1E36043900F209BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F797B93D1E36043900F209BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F797B93C1E36043900F209BA /* HeartView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F797B93E1E36043900F209BA /* HeartView */ = {
+			isa = PBXGroup;
+			children = (
+				F797B9511E36044D00F209BA /* RenderableView.swift */,
+				F797B9531E36047B00F209BA /* HeartView.xib */,
+				F797B9551E36048900F209BA /* HeartView.swift */,
+				F797B93F1E36043900F209BA /* AppDelegate.swift */,
+				F797B9411E36043900F209BA /* ViewController.swift */,
+				F797B9571E3605D900F209BA /* heart.png */,
+				F797B9431E36043900F209BA /* Main.storyboard */,
+				F797B9461E36043900F209BA /* Assets.xcassets */,
+				F797B9481E36043900F209BA /* LaunchScreen.storyboard */,
+				F797B94B1E36043900F209BA /* Info.plist */,
+			);
+			path = HeartView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F797B93B1E36043900F209BA /* HeartView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F797B94E1E36043900F209BA /* Build configuration list for PBXNativeTarget "HeartView" */;
+			buildPhases = (
+				F797B9381E36043900F209BA /* Sources */,
+				F797B9391E36043900F209BA /* Frameworks */,
+				F797B93A1E36043900F209BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartView;
+			productName = HeartView;
+			productReference = F797B93C1E36043900F209BA /* HeartView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F797B9341E36043900F209BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = EExT;
+				TargetAttributes = {
+					F797B93B1E36043900F209BA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2WN8Z4EKKL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F797B9371E36043900F209BA /* Build configuration list for PBXProject "HeartView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F797B9331E36043900F209BA;
+			productRefGroup = F797B93D1E36043900F209BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F797B93B1E36043900F209BA /* HeartView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F797B93A1E36043900F209BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F797B94A1E36043900F209BA /* LaunchScreen.storyboard in Resources */,
+				F797B9541E36047B00F209BA /* HeartView.xib in Resources */,
+				F797B9581E3605D900F209BA /* heart.png in Resources */,
+				F797B9471E36043900F209BA /* Assets.xcassets in Resources */,
+				F797B9451E36043900F209BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F797B9381E36043900F209BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F797B9421E36043900F209BA /* ViewController.swift in Sources */,
+				F797B9561E36048900F209BA /* HeartView.swift in Sources */,
+				F797B9401E36043900F209BA /* AppDelegate.swift in Sources */,
+				F797B9521E36044D00F209BA /* RenderableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F797B9431E36043900F209BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F797B9441E36043900F209BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F797B9481E36043900F209BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F797B9491E36043900F209BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F797B94C1E36043900F209BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F797B94D1E36043900F209BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F797B94F1E36043900F209BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2WN8Z4EKKL;
+				INFOPLIST_FILE = HeartView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EExT.HeartView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F797B9501E36043900F209BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2WN8Z4EKKL;
+				INFOPLIST_FILE = HeartView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EExT.HeartView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F797B9371E36043900F209BA /* Build configuration list for PBXProject "HeartView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F797B94C1E36043900F209BA /* Debug */,
+				F797B94D1E36043900F209BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F797B94E1E36043900F209BA /* Build configuration list for PBXNativeTarget "HeartView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F797B94F1E36043900F209BA /* Debug */,
+				F797B9501E36043900F209BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F797B9341E36043900F209BA /* Project object */;
+}
