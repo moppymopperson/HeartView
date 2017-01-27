@@ -11,6 +11,16 @@ import UIKit
 
 class HeartWeekViewController: UIViewController {
     
+    private let startDate:Date
+    
+    init(startDate:Date) {
+        self.startDate = startDate
+        super.init(nibName: "HeartWeekViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     @IBOutlet weak var sundayHeart: HeartView!
     @IBOutlet weak var mondayHeart: HeartView!
@@ -52,5 +62,5 @@ class HeartWeekViewController: UIViewController {
         ]
     }
     
-    
+    // TODO: Fill each heart based on data
 }

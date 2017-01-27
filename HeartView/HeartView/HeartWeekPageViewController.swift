@@ -11,7 +11,6 @@ import UIKit
 
 class HeartWeekPageViewController: UIPageViewController {
     
-    
 }
 
 extension HeartWeekPageViewController: UIPageViewControllerDataSource {
