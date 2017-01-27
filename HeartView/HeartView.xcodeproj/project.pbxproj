@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F70E10361E3B743700F804AD /* HeartWeekPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70E10351E3B743700F804AD /* HeartWeekPageViewController.swift */; };
+		F70E10381E3B74C500F804AD /* HeartWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70E10371E3B74C500F804AD /* HeartWeekViewController.swift */; };
+		F70E103A1E3B751600F804AD /* HeartWeekViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70E10391E3B751600F804AD /* HeartWeekViewController.storyboard */; };
 		F797B9401E36043900F209BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797B93F1E36043900F209BA /* AppDelegate.swift */; };
 		F797B9421E36043900F209BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797B9411E36043900F209BA /* ViewController.swift */; };
 		F797B9451E36043900F209BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F797B9431E36043900F209BA /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F70E10351E3B743700F804AD /* HeartWeekPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartWeekPageViewController.swift; sourceTree = "<group>"; };
+		F70E10371E3B74C500F804AD /* HeartWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartWeekViewController.swift; sourceTree = "<group>"; };
+		F70E10391E3B751600F804AD /* HeartWeekViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HeartWeekViewController.storyboard; sourceTree = "<group>"; };
 		F797B93C1E36043900F209BA /* HeartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F797B93F1E36043900F209BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F797B9411E36043900F209BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F70E10331E3B73FB00F804AD /* Heart */ = {
+			isa = PBXGroup;
+			children = (
+				F797B9531E36047B00F209BA /* HeartView.xib */,
+				F797B9551E36048900F209BA /* HeartView.swift */,
+				F797B9571E3605D900F209BA /* heart.png */,
+			);
+			name = Heart;
+			sourceTree = "<group>";
+		};
+		F70E103B1E3B751D00F804AD /* HeartWeek */ = {
+			isa = PBXGroup;
+			children = (
+				F70E10351E3B743700F804AD /* HeartWeekPageViewController.swift */,
+				F70E10371E3B74C500F804AD /* HeartWeekViewController.swift */,
+				F70E10391E3B751600F804AD /* HeartWeekViewController.storyboard */,
+			);
+			name = HeartWeek;
+			sourceTree = "<group>";
+		};
 		F797B9331E36043900F209BA = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				F797B9511E36044D00F209BA /* RenderableView.swift */,
-				F797B9531E36047B00F209BA /* HeartView.xib */,
-				F797B9551E36048900F209BA /* HeartView.swift */,
+				F70E10331E3B73FB00F804AD /* Heart */,
 				F797B93F1E36043900F209BA /* AppDelegate.swift */,
+				F70E103B1E3B751D00F804AD /* HeartWeek */,
 				F797B9411E36043900F209BA /* ViewController.swift */,
-				F797B9571E3605D900F209BA /* heart.png */,
 				F797B9431E36043900F209BA /* Main.storyboard */,
 				F797B9461E36043900F209BA /* Assets.xcassets */,
 				F797B9481E36043900F209BA /* LaunchScreen.storyboard */,
@@ -136,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70E103A1E3B751600F804AD /* HeartWeekViewController.storyboard in Resources */,
 				F797B94A1E36043900F209BA /* LaunchScreen.storyboard in Resources */,
 				F797B9541E36047B00F209BA /* HeartView.xib in Resources */,
 				F797B9581E3605D900F209BA /* heart.png in Resources */,
@@ -152,8 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F797B9421E36043900F209BA /* ViewController.swift in Sources */,
+				F70E10381E3B74C500F804AD /* HeartWeekViewController.swift in Sources */,
 				F797B9561E36048900F209BA /* HeartView.swift in Sources */,
 				F797B9401E36043900F209BA /* AppDelegate.swift in Sources */,
+				F70E10361E3B743700F804AD /* HeartWeekPageViewController.swift in Sources */,
 				F797B9521E36044D00F209BA /* RenderableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +346,7 @@
 				F797B9501E36043900F209BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
