@@ -21,16 +21,13 @@ import UIKit
      */
     @IBOutlet private weak var outlineView: UIImageView!
     
+
     /** 
-     A copy of the outline view that is used a mask for the heart
-     when it fills up
+     A second copy of the outline image, but this time with the
+     rendering mode set to template so that all non-transparent pixels
+     are made the tint color of the view
      */
-    @IBOutlet private weak var maskImageView: UIImageView!
-    
-    /** 
-     An all read view that is masked with
-     */
-    @IBOutlet private weak var filledHeartView: UIView!
+    @IBOutlet private weak var filledHeartImage: UIImageView!
     
     /** 
      This is resized to hide the top part of the heart view
@@ -48,25 +45,35 @@ import UIKit
      Set this to between 0 and 1 to adjust the percent of the
      heart that is filled.
      */
-    var value:CGFloat = 1.0 {
-        willSet {
+    @IBInspectable var value:CGFloat = 1.0 {
+        didSet {
             updateHeight()
         }
     }
     
     /** 
-     Setup masking, since that can't be done in IB directly.
-     See 'RenderableView' for more details.
+     Sets the fill color of the heart. Actually just a mapping of tint.
+     */
+    @IBInspectable var fillColor:UIColor {
+        get { return tintColor  }
+        set { tintColor = newValue }
+    }
+    
+    
+    /** 
+     Additional setup can be performed here. Essentially equivalent to 'viewDidLoad'
      */
     override func setup() {
         layoutIfNeeded()
-        filledHeartView.mask = maskImageView
+        filledHeartImage.image = outlineView.image?.withRenderingMode(.alwaysTemplate)
+        fillColor = .red
     }
-    
+
     /** 
      Play a fill animation
      */
     private func updateHeight() {
+        
         UIView.animate(withDuration: 1.0) { 
             self.layoutIfNeeded()
             self.topConstraint.constant = self.frame.height * (1 - self.value)
