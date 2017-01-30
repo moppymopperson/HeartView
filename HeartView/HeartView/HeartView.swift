@@ -66,6 +66,7 @@ import UIKit
     override func setup() {
         layoutIfNeeded()
         filledHeartImage.image = outlineView.image?.withRenderingMode(.alwaysTemplate)
+        fillColor = .red
     }
 
     /** 
