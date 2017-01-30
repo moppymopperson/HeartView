@@ -12,53 +12,45 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeartView" customModule="HeartView" customModuleProvider="target">
             <connections>
                 <outlet property="clippingView" destination="X6h-gO-HGk" id="Rvz-8z-gvQ"/>
-                <outlet property="filledHeartView" destination="L3x-8P-x9U" id="Dzc-PA-wtG"/>
-                <outlet property="maskImageView" destination="TzT-Ue-raJ" id="N3d-0x-yUd"/>
+                <outlet property="filledHeartImage" destination="Z2Q-gb-hLY" id="ftE-AA-0s5"/>
                 <outlet property="outlineView" destination="4Oz-2z-oyB" id="3ih-Bn-qs4"/>
                 <outlet property="topConstraint" destination="SrN-xZ-9pq" id="VFE-Dx-mqD"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Oz-2z-oyB" userLabel="Outline View">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="TzT-Ue-raJ" userLabel="Mask View">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                </imageView>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-gO-HGk" userLabel="Clipping View">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-gO-HGk" userLabel="Clipping View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3x-8P-x9U" userLabel="Filled Heart View">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            <color key="backgroundColor" red="0.86522414920000001" green="0.088848864880000003" blue="0.1269356901" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Q-gb-hLY">
+                            <rect key="frame" x="-0.5" y="0.0" width="375" height="334"/>
+                        </imageView>
                     </subviews>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="4Oz-2z-oyB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="6Ui-sb-4VE"/>
-                <constraint firstItem="L3x-8P-x9U" firstAttribute="top" secondItem="4Oz-2z-oyB" secondAttribute="top" id="MrE-My-pLh"/>
                 <constraint firstItem="4Oz-2z-oyB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NF1-Tt-gyX"/>
                 <constraint firstItem="X6h-gO-HGk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SrN-xZ-9pq"/>
-                <constraint firstItem="L3x-8P-x9U" firstAttribute="trailing" secondItem="4Oz-2z-oyB" secondAttribute="trailing" id="eMO-tG-pWj"/>
+                <constraint firstItem="Z2Q-gb-hLY" firstAttribute="centerX" secondItem="4Oz-2z-oyB" secondAttribute="centerX" id="dVi-EL-R7H"/>
                 <constraint firstAttribute="bottom" secondItem="X6h-gO-HGk" secondAttribute="bottom" id="fu8-X1-cvV"/>
-                <constraint firstItem="L3x-8P-x9U" firstAttribute="leading" secondItem="4Oz-2z-oyB" secondAttribute="leading" id="g02-bQ-TVz"/>
                 <constraint firstAttribute="trailing" secondItem="4Oz-2z-oyB" secondAttribute="trailing" id="hla-bV-XpQ"/>
-                <constraint firstItem="TzT-Ue-raJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jaq-Ff-j0l"/>
-                <constraint firstAttribute="bottom" secondItem="TzT-Ue-raJ" secondAttribute="bottom" id="k9R-0Q-6cL"/>
-                <constraint firstAttribute="trailing" secondItem="TzT-Ue-raJ" secondAttribute="trailing" id="lRQ-wj-ISi"/>
+                <constraint firstItem="Z2Q-gb-hLY" firstAttribute="width" secondItem="4Oz-2z-oyB" secondAttribute="width" id="lNz-Yw-Y0S"/>
+                <constraint firstItem="Z2Q-gb-hLY" firstAttribute="centerY" secondItem="4Oz-2z-oyB" secondAttribute="centerY" id="lnf-DY-fXc"/>
                 <constraint firstAttribute="bottom" secondItem="4Oz-2z-oyB" secondAttribute="bottom" id="mAJ-Ro-OAv"/>
                 <constraint firstAttribute="trailing" secondItem="X6h-gO-HGk" secondAttribute="trailing" id="p8W-2Y-4dg"/>
-                <constraint firstItem="L3x-8P-x9U" firstAttribute="bottom" secondItem="4Oz-2z-oyB" secondAttribute="bottom" id="pkm-8A-JcG"/>
                 <constraint firstItem="X6h-gO-HGk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vXu-xm-bdK"/>
-                <constraint firstItem="TzT-Ue-raJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xmX-uH-z5h"/>
+                <constraint firstItem="Z2Q-gb-hLY" firstAttribute="height" secondItem="4Oz-2z-oyB" secondAttribute="height" id="wWb-ji-Z0e"/>
             </constraints>
-            <point key="canvasLocation" x="34.5" y="54.5"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.5" y="-100"/>
         </view>
     </objects>
     <resources>

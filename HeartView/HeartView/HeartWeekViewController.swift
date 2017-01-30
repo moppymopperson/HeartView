@@ -11,10 +11,14 @@ import UIKit
 
 class HeartWeekViewController: UIViewController {
     
-    private let startDate:Date
+    let dateRange:DateInterval
     
     init(startDate:Date) {
-        self.startDate = startDate
+        let firstDayComponents = Calendar.current.dateComponents(Set([.year, .month, .day]), from: startDate)
+        let firstDate = Calendar.current.date(from: firstDayComponents)!
+        let lastDate = Calendar.current.date(byAdding: .day, value: 6, to: firstDate)!
+        self.dateRange = DateInterval(start: firstDate, end: lastDate)
+        
         super.init(nibName: "HeartWeekViewController", bundle: nil)
     }
     
@@ -46,7 +50,8 @@ class HeartWeekViewController: UIViewController {
             tuesdayHeart,
             wednesdayHeart,
             thursdayHeart,
-            fridayHeart
+            fridayHeart,
+            saturdayHeart
         ]
     }
     
@@ -62,5 +67,14 @@ class HeartWeekViewController: UIViewController {
         ]
     }
     
+ 
     // TODO: Fill each heart based on data
+    func randomizeFills() {
+        heartViews.forEach { $0.value = CGFloat(Float(arc4random()) / Float(UINT32_MAX)) }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        randomizeFills()
+    }
 }
