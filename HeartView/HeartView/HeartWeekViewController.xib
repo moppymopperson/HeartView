@@ -35,11 +35,11 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyf-oW-jpS" customClass="HeartView" customModule="HeartView" customModuleProvider="target">
-                    <rect key="frame" x="6" y="0.0" width="46.5" height="44"/>
+                    <rect key="frame" x="6" y="8" width="46.5" height="36"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARk-3D-BHh" customClass="HeartView" customModule="HeartView" customModuleProvider="target">
-                    <rect key="frame" x="64" y="0.0" width="46.5" height="44"/>
+                    <rect key="frame" x="64" y="8" width="46.5" height="36"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX9-Wi-oUS">
@@ -88,23 +88,23 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9X-lA-Zca" customClass="HeartView" customModule="HeartView" customModuleProvider="target">
-                    <rect key="frame" x="123" y="0.0" width="46.5" height="44"/>
+                    <rect key="frame" x="123" y="8" width="46.5" height="36"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TZ-q8-PaP" customClass="HeartView" customModule="HeartView" customModuleProvider="target">
-                    <rect key="frame" x="181" y="0.0" width="46.5" height="44"/>
+                    <rect key="frame" x="181" y="8" width="46.5" height="36"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfX-8h-H8r" customClass="HeartView" customModule="HeartView" customModuleProvider="target">
-                    <rect key="frame" x="240" y="0.0" width="46.5" height="44"/>
+                    <rect key="frame" x="240" y="8" width="46.5" height="36"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kz-Ep-feD" customClass="HeartView" customModule="HeartView" customModuleProvider="target">
-                    <rect key="frame" x="298" y="0.0" width="46.5" height="44"/>
+                    <rect key="frame" x="298" y="8" width="46.5" height="36"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKC-BD-ihm" customClass="HeartView" customModule="HeartView" customModuleProvider="target">
-                    <rect key="frame" x="357" y="0.0" width="46.5" height="44"/>
+                    <rect key="frame" x="357" y="8" width="46.5" height="36"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
@@ -133,7 +133,7 @@
                 <constraint firstItem="VRb-ns-5eW" firstAttribute="leading" secondItem="cdw-ei-WpK" secondAttribute="trailing" id="MQv-Y6-xiu"/>
                 <constraint firstItem="H9X-lA-Zca" firstAttribute="width" secondItem="ARk-3D-BHh" secondAttribute="width" id="PxX-25-mzT"/>
                 <constraint firstItem="M7W-gX-2Vh" firstAttribute="centerY" secondItem="qkk-mM-b0q" secondAttribute="centerY" id="R6X-NI-eS7"/>
-                <constraint firstItem="zyf-oW-jpS" firstAttribute="top" secondItem="nEt-qM-cQI" secondAttribute="top" id="RTM-MC-3UP"/>
+                <constraint firstItem="zyf-oW-jpS" firstAttribute="top" secondItem="nEt-qM-cQI" secondAttribute="top" constant="8" id="RTM-MC-3UP"/>
                 <constraint firstItem="B0l-pS-W4W" firstAttribute="height" secondItem="M7W-gX-2Vh" secondAttribute="height" id="SyR-ZZ-eaU"/>
                 <constraint firstItem="VRb-ns-5eW" firstAttribute="height" secondItem="cdw-ei-WpK" secondAttribute="height" id="TlL-qe-O4P"/>
                 <constraint firstItem="B0l-pS-W4W" firstAttribute="centerY" secondItem="M7W-gX-2Vh" secondAttribute="centerY" id="VOO-Fz-xBI"/>

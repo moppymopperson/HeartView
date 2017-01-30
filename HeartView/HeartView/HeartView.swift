@@ -47,7 +47,7 @@ import UIKit
      */
     @IBInspectable var value:CGFloat = 1.0 {
         didSet {
-            updateHeight()
+            updateHeight(animated: true)
         }
     }
     
@@ -72,12 +72,32 @@ import UIKit
     /** 
      Play a fill animation
      */
-    private func updateHeight() {
+    private func updateHeight(animated: Bool) {
         
+        if !animated {
+            topConstraint.constant = self.frame.height * (1 - self.value)
+            layoutIfNeeded()
+            return
+        }
+        
+        // fill
         UIView.animate(withDuration: 1.0) { 
             self.layoutIfNeeded()
             self.topConstraint.constant = self.frame.height * (1 - self.value)
             self.layoutIfNeeded()
         }
+        
+        // beat
+        let animator = UIViewPropertyAnimator(duration: 0.3, curve: .easeOut) {
+            self.transform = CGAffineTransform.init(scaleX: 1.2, y: 1.2)
+        }
+    
+        animator.addCompletion { (position) in
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { 
+                self.transform = CGAffineTransform.identity
+            }, completion: nil)
+        }
+        
+        animator.startAnimation()
     }
 }
